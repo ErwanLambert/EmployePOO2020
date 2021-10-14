@@ -26,6 +26,10 @@ class EmployeInformaticien extends Employe{
         }
     }
     
+    public static function gainAnnuel() {
+        
+    }
+    
     public function __toString(): string {
         return "Informaticien : " . $this->numero . " - " . $this->nom . " - " . $this->prenom . " - " . $this->dateDeNaissance->format('d/m/Y') . " - " . $this->salaireM . "<br>" . "- Projet : " . $this->getSonProjet()->getCodeProjet() . " - " . $this->getSonProjet()->getNomProjet() . " - " . $this->getSonProjet()->getDureePrevue();
     }

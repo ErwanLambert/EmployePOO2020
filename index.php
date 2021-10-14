@@ -13,6 +13,7 @@ try {
     Traitement::instanciationEmployeInformaticienV1();
     Traitement::instanciationEmployeInformaticienV2();
     Traitement::instanciationEmployeNonInformaticienV1();
+    Traitement::instanciationEmployeNonInformaticienV2();
 } 
 catch (Exception $ex) {
     echo $ex->getMessage();

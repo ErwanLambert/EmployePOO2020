@@ -1,6 +1,6 @@
 <?php
 
-class Employe{
+abstract class Employe{
     protected int $numero;
     protected string $nom;
     protected string $prenom;
@@ -45,6 +45,8 @@ class Employe{
         }
     }
     
+    public abstract function gainAnnuel(): float;
+
     public function __toString(): string {
         return $this->numero . " - " .$this->getNom() . " - " .$this->getPrenom() . " - " .$this->dateDeNaissance->format('d/m/Y') . " - " . $this->getSalaireM() . "<br>";
     }
