@@ -32,7 +32,16 @@ class Traitement {
         echo "<p>";
         echo $informaticien;
         echo "</p>";
-        $informaticien->setPrimeM(600);
+        $informaticien->setPrimeM(50);
         echo "Nouvelle prime = " . $informaticien->getPrimeM();
+    }
+    
+    public static function instanciationEmployeNonInformaticienV1() {
+        $nonInformaticien = new EmployeNonInformaticien(4, 'Duvernon', 'Hélène', new DateTime("1987/06/19"), 1150);
+        echo "<p>";
+        echo $nonInformaticien;
+        echo "</p>";
+        $nonInformaticien->setPrimeA(400);
+        echo "Nouvelle prime = " . $nonInformaticien->getPrimeA();
     }
 }
