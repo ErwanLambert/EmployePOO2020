@@ -21,8 +21,8 @@ class EmployeNonInformaticien extends Employe {
         }
     }
     
-    public static function gainAnnuel() {
-        
+    public function gainAnnuel(): float{
+        return (($this->salaireM*12)+$this->getPrimeA());
     }
     
     public function __toString(): string {

@@ -26,8 +26,8 @@ class EmployeInformaticien extends Employe{
         }
     }
     
-    public static function gainAnnuel() {
-        
+    public function gainAnnuel(): float{
+        return (($this->salaireM+$this->getPrimeM())*12);
     }
     
     public function __toString(): string {
