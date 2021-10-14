@@ -1,15 +1,15 @@
 <?php
 
 class Traitement {
-    public static function instanciationUnEmploye(): void{
-        $e= new Employe(1, "Dupont", "Jacques", new DateTime("12/07/1980"), 1000.00);
-        echo $e;
-    }
-    
-    public static function instanciationUnEmployeErreur(): void{
-        $e= new Employe(2, "Durand", "Sylvie", new DateTime("1975/06/14"), 800.00);
-        echo $e;
-    }
+//    public static function instanciationUnEmploye(): void{
+//        $e= new Employe(1, "Dupont", "Jacques", new DateTime("12/07/1980"), 1000.00);
+//        echo $e;
+//    }
+//    
+//    public static function instanciationUnEmployeErreur(): void{
+//        $e= new Employe(2, "Durand", "Sylvie", new DateTime("1975/06/14"), 800.00);
+//        echo $e;
+//    }
     
     public static function instanciationProjetV1(): void {
         $p= new Projet("PR7", "Librairie Gelistout", 102);
